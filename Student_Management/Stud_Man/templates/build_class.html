@@ -1,0 +1,100 @@
+{% extends 'layout/base.html' %}
+{% block title %} Trang chủ {% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/list_studen.js') }}"></script>
+{% endblock %}
+{% block content %}
+{% if user_role == 2 or user_role == 3 %}
+<div id="search-class-id" style="display: none;">
+    <form class="d-flex" action="/search">
+        <input class="form-control me-2" name="keyword" type="text" placeholder="Nhập từ khóa...">
+        <button class="btn btn-secondary">Tìm</button>
+    </form>
+</div>
+<h1 class="text-center text-primary" style="padding-top: 0.3em;">LẬP DANH SÁCH LỚP</h1>
+<div class="search-student" id="search-student-id">
+    <div>
+        <h5 style="margin-left: 5em">Tìm kiếm học sinh:</h5>
+        <select class="form-control" title="Nhấn để thay đổi phương thức tìm kiếm" id="search-selected" onchange="SearchStudentBtn()">
+            <option id="search-with-name">Tìm theo tên</option>
+            <option>Tìm theo MSHS</option>
+            <div style="display:none"></div>
+        </select>
+        <div id="input-search-name">
+            <form class="d-flex" action="/build-class">
+                <input class="form-control me-2" name="student-name" type="text"
+                       placeholder="Nhập tên...">
+                <button class="btn btn-secondary" type="submit">Tìm</button>
+            </form>
+        </div>
+        <div id="input-search-class" >
+            <div class="display:none !important">
+                <form class="d-flex" action="/build-class">
+                    <input class="form-control me-2" name="student-class" type="text"
+                           placeholder="Nhập lớp...">
+                    <button class="btn btn-secondary" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+        <div id="input-search-MSHS">
+            <form class="d-flex" action="/build-class">
+                <input class="form-control me-2" name="student-mshs" type="text"
+                       placeholder="Nhập mshs...">
+                <button class="btn btn-secondary" type="submit">Tìm</button>
+            </form>
+        </div>
+        <div id="open-list-student">
+            <a href="/list-student" class="btn btn-primary ml-3">
+                Xem danh sách đã thêm <span class="badge bg-danger list-counter">{{ student_list.size_of_class }}</span>
+            </a>
+        </div>
+        <div id="update-class-student">
+            <a href="javascript:;" class="btn btn-primary ml-3" id="btn-update-class" style="display:none">
+                Cập nhật lớp
+            </a>
+        </div>
+    </div>
+    <div>
+        {% if student_list %}
+        <table class="tb-notification tb-notification-student table-bordered table-hover">
+            <tr>
+                <th>Mã</th>
+                <th>Tên</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>SĐT</th>
+                <th>Đổi lớp</th>
+                <th></th>
+            </tr>
+            {% for i in student_list %}
+            <tr class="tb-notification-content">
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.sex }}</td>
+                <td>{{ i.dob }}</td>
+                <td>{{ i.phone }}</td>
+                <td>
+                    <select style="width:70px" class="update-class" onchange="changeClass()">
+                        {% for i in list_class %}
+                        <option>{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <a href="javascript:;" class="btn btn-danger" onclick="addToList({{ i.id }}, '{{ i.name }}', '{{ i.sex }}', '{{ i.dob }}', '{{ i.address }}', '{{ i.phone }}', '{{ i.email }}')">
+                        Thêm vào danh sách
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <h5 class="text-danger">Không tìm thấy học sinh phù hợp</h5>
+        {% endif %}
+    </div>
+</div>
+{% else %}
+<h1 class="text-center text-success">BẠN KHÔNG ĐƯỢC CẤP QUYỀN</h1>
+{% endif %}
+{% endblock %}

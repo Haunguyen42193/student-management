@@ -1,0 +1,105 @@
+{% extends 'layout/base.html'%}
+{% block title %} Trang chủ {% endblock %}
+
+
+{% block content %}
+{% if user_role == 1 %}
+<h1 class="text-center text-success" style="padding-top: 0.5em;">Quản lý điểm</h1>
+<div id="search-class-score">
+    <form class="d-flex" action="/score">
+        <input class="form-control me-2" name="class-name" type="text" placeholder="Nhập từ khóa...">
+        <button class="btn btn-secondary" type="submit">Tìm</button>
+    </form>
+</div>
+
+<div class="sc-note">
+    <table class="tb-notification table-bordered table-hover" id="tb-scores">
+        <tr>
+            <th>Tên học sinh</th>
+            <th>Loại điểm</th>
+            <th>Điểm thi</th>
+            <th>Lớp</th>
+            <th>Môn học</th>
+            <th>Học kỳ</th>
+            <th></th>
+        </tr>
+        {% for s in rep %}
+        {% if class_name in s.my_class.name %}
+        <tr class="tb-notification-content" id="score${s.score_id}">
+            <td>{{ s.student.name }}</td>
+            <td>{{ s.type_score }}</td>
+            <td>{{ s.score }}</td>
+            <td>{{ s.my_class.name }}</td>
+            <td>{{ s.subject.name }}</td>
+            <td>Học kỳ {{ s.semester.semester }}, Năm {{ s.student.id }}</td>
+            <td>
+                <a href="/score/{{s.student.id}}">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#myModal-detail">
+                        Xem chi tiết
+                    </button>
+                </a>
+            </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </table>
+</div>
+<div style="margin: 10px 0 0 5%">
+    <input type="submit" value="Xuất bảng điểm TB" class="btn btn-danger" id="btn-delete-score"
+           data-bs-toggle="modal" data-bs-target="#myModal-export"/>
+</div>
+<div class="modal fade" id="myModal-export">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Chọn lớp xuất điểm trung bình</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-floating mb-2 mt-1 select-score input-score">
+                    <div>
+                        <form class="d-block" action="/score/average">
+                            <div style="display:block">
+                                <h5>Chọn lớp</h5>
+                                <select name="class-name" class="custom-select" id="export-score-class">
+                                    {% for i in my_class %}
+                                    <option>{{ i.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <h5>Chọn năm học</h5>
+                                <select name="year" class="custom-select" id="export-score-year">
+                                    {% for i in semester %}
+                                    <option>{{ i.year }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="mt-1">
+                                <a href="/score/average"><button class="btn btn-secondary" type="submit">Tìm</button></a>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<h1 class="text-center text-success">BẠN KHÔNG ĐƯỢC CẤP QUYỀN</h1>
+{% endif %}
+{% endblock %}
+{% block js %}
+<script src="{{ url_for('static', filename='js/score.js') }}"></script>
+<!--<script>-->
+<!--    window.onload = function() {-->
+<!--        loadScores()-->
+<!--    }-->
+<!--</script>-->
+{% endblock %}
