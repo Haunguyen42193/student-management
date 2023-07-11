@@ -77,11 +77,12 @@ Phân tích, giải thích mối quan hệ
 
 - Quản lý điểm
 
+
+![image](https://github.com/Haunguyen42193/student-management/assets/92702518/6098a1b5-ed70-4348-a34e-1d87904cd282)
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/57704251-bfef-4253-8bff-9824d0888fdf)
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/98fd954b-1817-4ac8-baa2-c148c509636c)
-
-![image](https://github.com/Haunguyen42193/student-management/assets/92702518/6098a1b5-ed70-4348-a34e-1d87904cd282)
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/023b4633-e596-4797-811c-b69d7156b0e8)
 
