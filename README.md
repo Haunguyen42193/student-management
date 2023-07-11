@@ -1,4 +1,4 @@
-# student-management
+![image](https://github.com/Haunguyen42193/student-management/assets/92702518/a9b13d36-4f74-4706-b6d8-fc767b2fb008)# student-management
 1. Giới thiệu đề tài
 
 Phần mềm quản lý học sinh được tạo ra với các chức năng để hỗ trợ trong việc quản lý học sinh cũng như các công việc liên quan đến quản lý học sinh như việc tiếp nhận học sinh, lập danh sách lớp, điều chỉnh lớp, nhập điểm môn học, xuất điểm trung bình, người quản trị xem báo cáo tổng kết môn học hay thay đổi quy định, quản lý các môn học. Phần mềm được viết ra với mục tiêu giúp cho giáo viên hay người quản trị hay nhân viên có thể thực hiện dễ dàng các công việc của mình. 
@@ -79,7 +79,8 @@ Chức năng lập danh sách lớp, đổi lớp
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/f3fbd5df-8c7c-4889-9dca-007e9ead0156)
 
-![image](https://github.com/Haunguyen42193/student-management/assets/92702518/b6977610-1609-464c-b551-4c8fc60e0d51)
+![image](https://github.com/Haunguyen42193/student-management/assets/92702518/730bf7b0-5907-4195-b034-469d6482ffcd)
+
 
 4.4 Chức năng của admin
 
