@@ -52,13 +52,30 @@ Phân tích, giải thích mối quan hệ
 
 4.1 Chức năng của user
 
-Đăng nhập
-
-![image](https://github.com/Haunguyen42193/student-management/assets/92702518/16ed9a93-7c5a-4829-a962-97d3c2bc8831)
+- Đăng nhập
 
 4.2 Chức năng của giáo viên
 
-Chức năng quản lý quản lý điểm
+- Chức năng quản lý quản lý điểm
+
+4.3 Chức năng của nhân viên
+
+- Chức năng lập danh sách lớp, đổi lớp
+
+4.4 Chức năng của admin
+
+- Chức năng quản lý quy định
+- Lập danh sách lớp, đổi lớp
+- Chức năng quản lý môn học
+- Chức năng thống kê báo cáo
+
+5. Giao diện
+
+- Đăng nhập
+
+![image](https://github.com/Haunguyen42193/student-management/assets/92702518/16ed9a93-7c5a-4829-a962-97d3c2bc8831)
+
+- Quản lý điểm
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/57704251-bfef-4253-8bff-9824d0888fdf)
 
@@ -70,24 +87,22 @@ Chức năng quản lý quản lý điểm
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/30c29994-88a2-4c81-9b06-c92857d6add0)
 
-4.3 Chức năng của nhân viên
-
-Chức năng lập danh sách lớp, đổi lớp
+- lập danh sách lớp, đổi lớp
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/f3fbd5df-8c7c-4889-9dca-007e9ead0156)
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/cd920947-acb8-428b-8e24-daf8d81f788d)
 
-
-
-4.4 Chức năng của admin
-
-Chức năng quản lý quy định
+- Quản lý quy định
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/c366a3cf-0bf7-45de-a017-322f8b901371)
 
-Chức năng quản lý môn học
+- Lập danh sách lớp, đổi lớp
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/08fc3f84-8994-472d-bc33-d1ab2f988a61)
 
-Chức năng thống kê báo cáo
+- Quản lý môn học
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/2686be6c-57b5-4637-8ccc-d698b20b538f)
+
+- Thống kê báo cáo
