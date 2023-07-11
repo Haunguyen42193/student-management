@@ -79,7 +79,7 @@ Chức năng lập danh sách lớp, đổi lớp
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/f3fbd5df-8c7c-4889-9dca-007e9ead0156)
 
-![image](https://github.com/Haunguyen42193/student-management/assets/92702518/730bf7b0-5907-4195-b034-469d6482ffcd)
+![image](https://github.com/Haunguyen42193/student-management/assets/92702518/f57d2885-7e85-4b2e-9307-dddfcbf6679d)
 
 
 4.4 Chức năng của admin
