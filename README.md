@@ -99,12 +99,10 @@ Phân tích, giải thích mối quan hệ
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/c366a3cf-0bf7-45de-a017-322f8b901371)
 
-- Lập danh sách lớp, đổi lớp
+- Quản lý môn học
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/08fc3f84-8994-472d-bc33-d1ab2f988a61)
 
-- Quản lý môn học
+- Thống kê báo cáo
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/2686be6c-57b5-4637-8ccc-d698b20b538f)
-
-- Thống kê báo cáo
