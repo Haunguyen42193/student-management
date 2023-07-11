@@ -4,6 +4,7 @@
 Phần mềm quản lý học sinh được tạo ra với các chức năng để hỗ trợ trong việc quản lý học sinh cũng như các công việc liên quan đến quản lý học sinh như việc tiếp nhận học sinh, lập danh sách lớp, điều chỉnh lớp, nhập điểm môn học, xuất điểm trung bình, người quản trị xem báo cáo tổng kết môn học hay thay đổi quy định, quản lý các môn học. Phần mềm được viết ra với mục tiêu giúp cho giáo viên hay người quản trị hay nhân viên có thể thực hiện dễ dàng các công việc của mình. 
 
 2. Các bước thực hiện đề tài
+
 - Thiết kế lược đồ use case
 - Thiết kế sơ đồ lớp
 - Thiết kế giao diện cho web
@@ -13,9 +14,11 @@ Phần mềm quản lý học sinh được tạo ra với các chức năng đ�
 3. Thiết kế hệ thống
 
 3.1 Lược đồ use case
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/6c73ea2d-d8ed-4d72-885d-b9142425bfe0)
 
 3.2 Sơ đồ lớp
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/fbd62fde-84be-499e-8be9-5dc9d8cc1ff0)
 
 3.3 Lược đồ quan hệ
@@ -34,6 +37,7 @@ Phần mềm quản lý học sinh được tạo ra với các chức năng đ�
 - QuyDinh (id, loai_quy_dinh, gioi_han, # id User)
 
 Phân tích, giải thích mối quan hệ
+
 	User – HocKy: User có thể dạy, học hay quản lý nhiều học kỳ. Và một học kỳ có nhiều user hoạt động.
 	GV_Lop: Từ mối quan hệ n-n của bảng User và bảng Lop. Một user có thể thuộc nhiều lớp và một lớp có nhiều user khác nhau.
 	HocSinh – Lop: Lớp chứa nhiều học sinh. Và học sinh sẽ lên lớp hoặc chuyển lớp nên một học sinh có thể thuộc nhiều lớp.
@@ -52,11 +56,13 @@ Phân tích, giải thích mối quan hệ
 4.1 Chức năng của user
 
 Đăng nhập
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/16ed9a93-7c5a-4829-a962-97d3c2bc8831)
 
 4.2 Chức năng của giáo viên
 
 Chức năng quản lý quản lý điểm
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/57704251-bfef-4253-8bff-9824d0888fdf)
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/98fd954b-1817-4ac8-baa2-c148c509636c)
@@ -70,12 +76,15 @@ Chức năng quản lý quản lý điểm
 4.3 Chức năng của nhân viên
 
 Chức năng lập danh sách lớp, đổi lớp
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/f3fbd5df-8c7c-4889-9dca-007e9ead0156)
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/b6977610-1609-464c-b551-4c8fc60e0d51)
 
 4.4 Chức năng của admin
+
 Chức năng quản lý quy định
+
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/c366a3cf-0bf7-45de-a017-322f8b901371)
 
 Chức năng quản lý môn học
