@@ -37,19 +37,16 @@ Phần mềm quản lý học sinh được tạo ra với các chức năng đ�
 - QuyDinh (id, loai_quy_dinh, gioi_han, # id User)
 
 Phân tích, giải thích mối quan hệ
-
-	User – HocKy: User có thể dạy, học hay quản lý nhiều học kỳ. Và một học kỳ có nhiều user hoạt động.
-	GV_Lop: Từ mối quan hệ n-n của bảng User và bảng Lop. Một user có thể thuộc nhiều lớp và một lớp có nhiều user khác nhau.
-	HocSinh – Lop: Lớp chứa nhiều học sinh. Và học sinh sẽ lên lớp hoặc chuyển lớp nên một học sinh có thể thuộc nhiều lớp.
-	HocSinh – HocKy: Học sinh có thể học nhiều học kỳ trong năm học và một học kỳ có nhiều học sinh học tập.
-	User – MonHoc: User có thể dạy, học hay quản lý nhiều môn học. Và một học kỳ có nhiều user dạy, học hay quản lý.
-
-	User – QuyDinh: User NQT có thể thay đổi nhiều quy định nhưng một quy định chỉ được quản lý bởi 1 NQT. Khi NQT nghỉ việc hay chuyển cơ sở thì quy định vẫn còn, không bị hủy theo thông tin NQT.
-	Lop – Diem: Một lớp có thể có nhiều điểm nhưng một điểm chỉ thuộc về một lớp duy nhất. Khi lớp không còn hoạt động dạy học tiếp thì điểm về lớp vẫn còn, không bị hủy theo thông tin lớp.
-	HocKy – Diem: Một học kỳ có thể có nhiều điểm nhưng một điểm chỉ thuộc về một học kỳ duy nhất. Khi học kỳ bị hủy thì điểm về học kỳ đó vẫn còn, không bị hủy theo thông tin học kỳ.
-
-	MonHoc – Diem: Một môn học có thể có rất nhiều điểm nhưng một điểm chỉ báo cáo về một môn học. Nếu môn học nào bị hủy thì điểm của môn học đó cũng bị xóa theo.
-	HocSinh – Diem: Một học sinh có rất nhiều điểm nhưng một điểm chỉ thuộc về một học sinh thôi. Nên nếu học sinh đó có nghỉ hoặc chuyển trường thì điểm của học sinh ấy cũng bị hủy theo thông tin học sinh.
+- User – HocKy: User có thể dạy, học hay quản lý nhiều học kỳ. Và một học kỳ có nhiều user hoạt động.
+- GV_Lop: Từ mối quan hệ n-n của bảng User và bảng Lop. Một user có thể thuộc nhiều lớp và một lớp có nhiều user khác nhau.
+- HocSinh – Lop: Lớp chứa nhiều học sinh. Và học sinh sẽ lên lớp hoặc chuyển lớp nên một học sinh có thể thuộc nhiều lớp.
+- HocSinh – HocKy: Học sinh có thể học nhiều học kỳ trong năm học và một học kỳ có nhiều học sinh học tập.
+- User – MonHoc: User có thể dạy, học hay quản lý nhiều môn học. Và một học kỳ có nhiều user dạy, học hay quản lý.
+- User – QuyDinh: User NQT có thể thay đổi nhiều quy định nhưng một quy định chỉ được quản lý bởi 1 NQT. Khi NQT nghỉ việc hay chuyển cơ sở thì quy định vẫn còn, không bị hủy theo thông tin NQT.
+- Lop – Diem: Một lớp có thể có nhiều điểm nhưng một điểm chỉ thuộc về một lớp duy nhất. Khi lớp không còn hoạt động dạy học tiếp thì điểm về lớp vẫn còn, không bị hủy theo thông tin lớp.
+- HocKy – Diem: Một học kỳ có thể có nhiều điểm nhưng một điểm chỉ thuộc về một học kỳ duy nhất. Khi học kỳ bị hủy thì điểm về học kỳ đó vẫn còn, không bị hủy theo thông tin học kỳ.
+- MonHoc – Diem: Một môn học có thể có rất nhiều điểm nhưng một điểm chỉ báo cáo về một môn học. Nếu môn học nào bị hủy thì điểm của môn học đó cũng bị xóa theo.
+- HocSinh – Diem: Một học sinh có rất nhiều điểm nhưng một điểm chỉ thuộc về một học sinh thôi. Nên nếu học sinh đó có nghỉ hoặc chuyển trường thì điểm của học sinh ấy cũng bị hủy theo thông tin học sinh.
 
 4. Chức năng
 
