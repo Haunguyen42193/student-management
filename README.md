@@ -75,10 +75,11 @@ Phân tích, giải thích mối quan hệ
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/16ed9a93-7c5a-4829-a962-97d3c2bc8831)
 
-- Quản lý điểm
-
+- Trang chủ
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/6098a1b5-ed70-4348-a34e-1d87904cd282)
+
+- Quản lý điểm
 
 ![image](https://github.com/Haunguyen42193/student-management/assets/92702518/57704251-bfef-4253-8bff-9824d0888fdf)
 
